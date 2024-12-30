@@ -5,9 +5,10 @@ import express  from "express"
 const app = express();
 
 const PORT = process.env.PORT || 4000;
+app.use(express.json())
 
-app.get("/",(res, req)=> {
-    res.send("Hello, Sameer ")
+app.get("/",(req,res )=> {
+    res.send("Hello World")
 })
 
 
